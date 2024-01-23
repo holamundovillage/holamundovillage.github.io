@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hola Mundo Web Page</title>
+    <link rel="icon" type="image" href="./assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay: 1700ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1900ms;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay: 1900ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1700ms;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay: 1000ms;">about</a>
+    <a id="village" onclick="showvillage()" class="animated fadeIn" style="animation-delay: 1000ms;">village</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay: 1000ms;">contact</a>
+    <a id="sponsors" onclick="showsponsors()" class="animated fadeIn" style="animation-delay: 1000ms;">sponsors</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
+        <h1>Hola Mundo Village</h1>
+        <h2>DEFON's future village (if they let us)</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showvillage()">village</a>
+            <a onclick="showcontact()">contact</a>
+            <a onclick="showsponsors()">sponsors</a>
+        </div>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"
+                        href="https://x.com/holamundodefcon"><i class="fab fa-twitter"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"
+                        href="https://instagram.com/holamundodefcon"><i class="fab fa-instagram"></i></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="sponsors_container" class="container">
+        <div onclick="closesponsors()"><i class="fas fa-angle-up"></i></div>
+        <h1>sponsors</h1>
+        <section>
+            <h2>Founders</h2>
+            <p>
+                Those who love us and trusted us even when we had nothing
+            </p>
+            <ul>
+                <div class="sponsors_card">
+                    <div class="sponsors_info">
+                        <h3>Mercado Libre</h3>
+                        <p>Mercado Libre es una empresa multinacional de origen argentino dedicada al comercio electrónico en Latinoamérica, con sede en Montevideo, Uruguay</p>
+                        <button class="btn_one"><a
+                                href="https://mercadolibre.com.ar"
+                                style="color: inherit; text-decoration: none"> View Sponsor </a></button>
+                    </div>
+                </div>
+            </ul>
+            <h2>Gold</h2>
+            <p>
+                Those who love us and trust us
+            </p>
+            <ul>
+                <div class="sponsors_card">
+                    <div class="sponsors_info">
+                        <h3>We are waiting for you</h3>
+                    </div>
+                </div>
+            </ul>
+            <h2>Silver</h2>
+            <p>
+                Those who like us and trust us
+            </p>
+            <ul>
+                <div class="sponsors_card">
+                    <div class="sponsors_info">
+                        <h3>We are waiting for you</h3>
+                    </div>
+                </div>
+            </ul>
+            <h2>Bronze</h2>
+            <p>
+                Those who appreciate and trust us
+            </p>
+            <ul>
+                <div class="sponsors_card">
+                    <div class="sponsors_info">
+                        <h3>We are waiting for you</h3>
+                    </div>
+                </div>
+            </ul>
+        </section>
+    </div>
+    <div id="village_container" class="container">
+        <div onclick="closevillage()"><i class="fas fa-angle-right"></i></div>
+        <h1>Village</h1>
+        <section>
+            <h2>Mission and Vision</h2>
+            <p>
+              We're on a mission to create a kickass space where the Spanish-speaking crew steals the spotlight, 
+              hooking everyone up with top-notch content, no strings attached.
+            </p>
+
+            <p>
+              To make it happen, we're keeping it real with content strictly in Spanish, and we've got English 
+              translations on standby. It's not just about breaking language barriers; it's about throwing a party 
+              for cultural diversity. We're throwing both languages in the mix, not just tipping our hats but giving 
+              a big shout-out to all the different perspectives that spice up our cybersecurity community. We all 
+              know that Spanish is the second most spoken language in the United States and 41.7 million people have 
+              Spanish as their native language. 
+            </p>
+
+            <p>
+              We exist and we want to make our voices heard.
+            </p>
+
+            <h2>Why Choose Us</h2>
+            <p>
+              We're a squad of folks rocking Spanish as our mother tongue, each bringing our own flavor to the 
+              cybersecurity game. Our vibe? Sharing knowledge and blowing up the community, especially for those 
+              chilling on the fringes of the usual cybersecurity scene. When you roll with us, you're diving into 
+              a scene that's all about embracing diversity, keeping it real, and making cybersecurity accessible to everyone.
+            </p>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1>about us</h1>
+        <section>
+            <h2>Ailín Castellucci</h2>
+            <div class="us">
+              <a href="https://www.linkedin.com/in/acastellucci/" target="_blank"><img src="/assets/ailin.jpeg" alt="Ailin" class="avatar"></a>
+                  <div class="bio">
+                      <p>
+                          I'm a cybersecurity specialist who loves helping people protect their data and systems. I believe that everyone has a role to play in cybersecurity, and I'm always looking for ways to help and empower people to be more secure online.
+                      </p>
+                  </div>
+            </div>
+            <h2>Mercedes Muñoz</h2>
+            <div class="us">
+              <a href="https://www.linkedin.com/in/mikiminoru/" target="_blank"><img src="/assets/M.jpeg" alt="M" class="avatar"></a>
+                  <div class="bio">
+                      <p>
+                          Curious, enthusiastic and motivated with what is yet to learn
+                      </p>
+                  </div>
+            </div>
+
+        </section>
+    </div>
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1>contact</h1>
+        <section>
+            <h2>contact us</h2>
+            <p>
+            <form action="https://formcarry.com/s/yldX6Y4iATt" method="POST" class="formcarry-form">
+                <input name="name" type="text" placeholder="name" required />
+                <input name="email" type="email" placeholder="email" required /><br>
+                <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                <button class="btn_one">send</button>
+            </form>
+            </p>
+        </section>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
