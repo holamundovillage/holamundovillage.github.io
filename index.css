@@ -414,3 +414,20 @@ body {
     border-radius: 50%;
     margin-right: 20px;
 }
+
+button.button{
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  margin:4px;
+  filter: grayscale(50%);
+  background-size:400%;
+  background-position:center;
+  border-radius:50%;
+  border-color:transparent;
+  transition: all 100ms ease-in-out;
+}
+button.button span {
+  opacity:1;
+  transition: opacity 100ms ease-in-out;
+}

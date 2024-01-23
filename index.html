@@ -35,7 +35,7 @@
     <a id="sponsors" onclick="showsponsors()" class="animated fadeIn" style="animation-delay: 1000ms;">sponsors</a>
     <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
         <h1>Hola Mundo Village</h1>
-        <h2>DEFCON's future village (if they let us)</h2>
+        <h2 id="slogan">DEFCON's future village (if they let us)</h2>
         <div id="menu">
             <a onclick="showabout()">about</a>
             <a onclick="showvillage()">village</a>
@@ -139,13 +139,13 @@
     </div>
     <div id="about_container" class="container">
         <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-        <h1>about us</h1>
+        <h1 id="about-title">about us</h1>
         <section>
             <h2>Ailín Castellucci</h2>
             <div class="us">
               <a href="https://www.linkedin.com/in/acastellucci/" target="_blank"><img src="/assets/ailin.jpeg" alt="Ailin" class="avatar"></a>
                   <div class="bio">
-                      <p>
+                      <p id="bio-ailin">
                           I'm a cybersecurity specialist who loves helping people protect their data and systems. I believe that everyone has a 
                           role to play in cybersecurity, and I'm always looking for ways to help and empower people to be more secure online.
                       </p>
@@ -155,7 +155,7 @@
             <div class="us">
               <a href="https://www.linkedin.com/in/mikiminoru/" target="_blank"><img src="/assets/M.jpeg" alt="M" class="avatar"></a>
                   <div class="bio">
-                      <p>
+                      <p id="bio-m">
                           Curious, enthusiastic and motivated with what is yet to learn
                       </p>
                   </div>
@@ -164,7 +164,7 @@
             <div class="us">
               <a href="https://www.linkedin.com/in/martabarriomarcos/" target="_blank"><img src="/assets/Marta.jpeg" alt="M" class="avatar"></a>
                   <div class="bio">
-                      <p>
+                      <p id="bio-marta">
                           Me dedico al sector de la Ciberseguridad, especializada en el ámbito técnico, en labores de hacking ético y pentesting. 
                           Con experiencia en análisis de vulnerabilidades, pentesting, revisión de seguridad en redes e infraestructuras
                       </p>
@@ -174,7 +174,7 @@
             <div class="us">
               <a href="https://www.linkedin.com/in/daniel-isler/" target="_blank"><img src="/assets/Daniel.jpeg" alt="M" class="avatar"></a>
                   <div class="bio">
-                      <p>
+                      <p id="bio-daniel">
                           Consultor en Concientización e Ingeniería Social, Licenciado en Artes de la Representación con certificaciones en 
                           Ingeniería Social, Red Team y OSINT. Team Leader de Fr1endly RATs la unidad de Ingeniería Social de Dreamlab Technologies 
                           en Chile. En los últimos ocho años se ha especializado en técnicas y herramientas avanzadas de Ingeniería Social, sobre 
@@ -187,22 +187,74 @@
     </div>
     <div id="contact_container" class="container">
         <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-        <h1>contact</h1>
+        <h1 id="contact-title">contact</h1>
         <section>
-            <h2>contact us</h2>
+            <h2 id="contact-us">contact us</h2>
             <p>
             <form action="https://formcarry.com/s/yldX6Y4iATt" method="POST" class="formcarry-form">
                 <input name="name" type="text" placeholder="name" required />
                 <input name="email" type="email" placeholder="email" required /><br>
                 <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
-                <button class="btn_one">send</button>
+                <button id="button-contact" class="btn_one">send</button>
             </form>
             </p>
         </section>
     </div>
+    <div id="footer">
+        <button id="cambio-idioma" class="button is-large">
+          <span id="caption" class="icon">ES</span>
+        </button>
+    </div>
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var traducciones = {
+                "es": {
+                    "slogan": "La futura village de DEFCON (Si ellos nos dejan)",
+                    "about": "acerca",
+                    "contact": "contacto",
+                    "caption": "EN",
+                    "contact-title": "contacto",
+                    "contact-us": "contactanos",
+                    "button-contact": "enviar",
+                    "about-title": "acerca de",
+                    "bio-ailin": "Soy especialista en ciberseguridad y me encanta ayudar a la gente a proteger sus datos y sistemas. Creo que todo el mundo tiene un papel que desempeñar en la ciberseguridad, y siempre estoy buscando formas de ayudar y capacitar a las personas para que estén más seguras en línea",
+                    "bio-m": "Curiosa, entusiasta y motivada con lo que le queda por aprender",
+                    "bio-marta": "Me dedico al sector de la Ciberseguridad, especializada en el ámbito técnico, en labores de hacking ético y pentesting .Con experiencia en análisis de vulnerabilidades, pentesting, revisión de seguridad en redes e infraestructuras",
+                    "bio-daniel": "Consultor en Concientización e Ingeniería Social, Licenciado en Artes de la Representación con certificaciones en Ingeniería Social, Red Team y OSINT. Team Leader de Fr1endly RATs la unidad de Ingeniería Social de Dreamlab Technologies en Chile. En los últimos ocho años se ha especializado en técnicas y herramientas avanzadas de Ingeniería Social, sobre todo en lo que respecta a intrusión física, pretexting, vishing, phishing y vectores mixtos"
+                },
+                "en": {
+                    "slogan": "DEFCON's future village (if they let us)",
+                    "about": "about",
+                    "contact": "contact",
+                    "caption": "ES",
+                    "contact-title": "contact",
+                    "contact-us": "contact us",
+                    "button-contact": "send",
+                    "about-title": "about us",
+                    "bio-ailin": "I'm a cybersecurity specialist who loves helping people protect their data and systems. I believe that everyone has a role to play in cybersecurity, and I'm always looking for ways to help and empower people to be more secure online",
+                    "bio-m": "Curious, enthusiastic and motivated with what is yet to learn",
+                    "bio-marta": "I am dedicated to the Cybersecurity sector, specializing in the technical field, in ethical hacking and pentesting. Experienced in vulnerability analysis, pentesting, network and infrastructure security review",
+                    "bio-daniel": "Consultant in Awareness and Social Engineering, Bachelor in Performing Arts with certifications in Social Engineering, Red Team and OSINT. Team Leader of Fr1endly RATs the Social Engineering unit of Dreamlab Technologies in Chile. In the last eight years he has specialized in advanced Social Engineering techniques and tools, especially regarding physical intrusion, pretexting, vishing, phishing and mixed vectors"
+                }
+            };
+
+            var idiomaActual = "en";
+
+            function cambiarIdioma() {
+                console.log("Cambiando idioma");
+                idiomaActual = idiomaActual === "es" ? "en" : "es";
+                for (var id in traducciones[idiomaActual]) {
+                    document.getElementById(id).textContent = traducciones[idiomaActual][id];
+                }
+            }
+
+            document.getElementById("cambio-idioma").addEventListener("click", cambiarIdioma);
+        });
+    </script>
+
 </body>
 
 </html>
