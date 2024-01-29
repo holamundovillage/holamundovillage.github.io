@@ -109,10 +109,13 @@
 
         </section>
     </div>
-    <div id="village_container" class="container">
-        <div onclick="closevillage()"><i class="fas fa-angle-right"></i></div>
-        <h1>Village</h1>
-        <section>
+    <div id="village_container" class="container" onclick="closevillage()">
+        <!-- <div onclick="closevillage()"><i class="fas fa-angle-right"></i></div> -->
+        <img src="/assets/guarda-left.png" alt="guarda" style="position: absolute; top:0; left: 10px;">
+        <img src="/assets/figuras-01.png" alt="fig1" style="position: absolute; bottom:-300px; right: 100px;">
+        <img src="/assets/figuras-03.png" alt="fig3" style="position: absolute; bottom:250px; right: -100px;">
+        <!-- <h1>Village</h1> -->
+        <section style="position: absolute; left: 200px; width: 40%; top: 100px;">
             <h2 id="village-title-01">Mission and Vision</h2>
             <p id="mision-01">
               We're on a mission to create a kickass space where the Spanish-speaking crew steals the spotlight, 
@@ -212,18 +215,23 @@
         </section>
     </div>
     <div id="contact_container" class="container">
-        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-        <h1 id="contact-title">contact</h1>
+        <!-- <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div> -->
+        <!-- <h1 id="contact-title">contact</h1> -->
+        <img src="/assets/guarda-down.png" alt="guarda" style="position: absolute; bottom:10px; left: 0px; width: 100%">
+        <div style="position: absolute; top:50px; left: -150px; display: flex;"  onclick="closecontact()">
+          <img src="/assets/rombo-amarillo-verde.png" alt="r1">
+          <h2 id="contact-us">CONTACT US</h2>
+        </div>
         <section>
-            <h2 id="contact-us">contact us</h2>
-            <p>
+            <!-- <h2 id="contact-us">CONTACT US</h2> -->
+            <div style="position: absolute; top:250px; left: 200px; width: 30%">
             <form action="https://formcarry.com/s/yldX6Y4iATt" method="POST" class="formcarry-form">
-                <input name="name" type="text" placeholder="name" required />
-                <input name="email" type="email" placeholder="email" required /><br>
-                <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                <input name="name" type="text" placeholder="Name" required style="width: 100%" />
+                <input name="email" type="email" placeholder="e-Mail" required style="width: 100%" />
+                <textarea name="message" placeholder="Your message" required rows="5" style="width: 100%"></textarea><br>
                 <button id="button-contact" class="btn_one">send</button>
             </form>
-            </p>
+            </div>
         </section>
     </div>
     <div id="footer">
@@ -238,12 +246,10 @@
         document.addEventListener("DOMContentLoaded", function() {
             var traducciones = {
                 "es": {
-                    "slogan": "La futura village de DEFCON (Si ellos nos dejan)",
-                    "about": "acerca",
-                    "contact": "contacto",
+                    "about": "ACERCA",
+                    "contact": "CONTACTO",
                     "caption": "EN",
-                    "contact-title": "contacto",
-                    "contact-us": "contactanos",
+                    "contact-us": "CONTACTANOS",
                     "button-contact": "enviar",
                     "village-title-01": "Misión y Visión",
                     "village-title-02": "Porque elegirnos",
@@ -271,12 +277,10 @@
                     "bio-kenn": "Eterno aprendiz. Desarrollador apasionado. Investigador anónimo. Amante de los patrones"
                 },
                 "en": {
-                    "slogan": "DEFCON's future village (if they let us)",
-                    "about": "about",
-                    "contact": "contact",
+                    "about": "ABOUT",
+                    "contact": "CONTACT",
                     "caption": "ES",
-                    "contact-title": "contact",
-                    "contact-us": "contact us",
+                    "contact-us": "CONTACT US",
                     "button-contact": "send",
                     "village-title-01": "Mission and Vision",
                     "village-title-02": "Why Choose Us",
