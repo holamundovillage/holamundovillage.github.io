@@ -39,7 +39,6 @@ body {
     100% {transform: rotate(360deg);}
 }
 
-
 #box {
     width:100vw;
     height:100vh;
@@ -312,8 +311,8 @@ body {
     display:none;
 }
 .container div {
-    font-size:25px;
-    margin:20px 0px;
+    /* font-size:25px; */
+    /* margin:20px; */
     transition:0.4s ease-in-out;
 }
 .container div:hover {
@@ -322,7 +321,7 @@ body {
 .container section {
     margin:8vh 0px;
 }
-#village_container, #contact_container {
+#village_container, #contact_container, #about_container, #sponsors_container {
     background:url("/assets/bg-01.png") center center;
 }
 #used div{
@@ -504,16 +503,30 @@ body {
     }
 }
 
-.us {
+/* .us { */
+/*     display: flex; */
+/*     align-items: center; */
+/*     margin-top: 150px; */
+/* } */
+
+.contenedor-romboide {
+    width: 200px;
+    height: 200px; 
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px;
+.contenedor-romboide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-romboide img {
+    width: 100%;
+    height: 100%;
 }
 
 button.button{
@@ -549,4 +562,91 @@ button.button span {
     height: 50px;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+#about-title {
+    margin-left: 20px;
+    color: #f9c921;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#sponsors-title {
+    margin-left: 20px;
+    color: #f9c921;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bio-container {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+    width: 15%;
+  h2 {
+    font-size:25px;
+    margin: 0px;
+    text-align: center;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 200;
+    /* text-align: justify; */
+  }
+}
+
+.sp-container {
+    position: absolute;
+    bottom: 50px;
+    /* left: 0px; */
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: flex-end;
+}
+
+.sp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-right: 10px; */
+    width: 25%;
+    color: rgb(110, 181, 141);
+    background-color: #305757;
+    border-radius: 50px 50px 0 0;
+    margin: 10px;
+    padding: 50px;
+  h2 {
+    font-size:20px;
+    margin: 0px;
+    text-align: center;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 200;
+  }
+}
+
+.sponsors_info {
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#sponsors-title, #about-title, #contact-us {
+  font-size: 45px;
 }
