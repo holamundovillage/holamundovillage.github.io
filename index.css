@@ -130,9 +130,9 @@ body {
     background-image: url('/assets/flecha-up.png');
     background-repeat: no-repeat;
     background-position: center bottom;
-    height: 50px; /* Ajustar según el tamaño de tu imagen */
+    height: 50px;
     transition: background-position 0.3s ease;
-    opacity: 0; /* Inicialmente oculta */
+    opacity: 0; 
 }
 #sponsors:hover::after {
     background-position: center top;
@@ -261,21 +261,6 @@ body {
     background-position: center top;
     opacity: 1;
 }
-/* #contact:hover { */
-/*     /* background:rgba(255,50,50,0.9); */ */
-/*     background:rgba(110, 181, 141, 0.9); */
-/*     cursor:pointer; */
-/* } */
-/* #village:hover { */
-/*     /* background:rgba(255,50,50,0.9); */ */
-/*     background:rgba(110, 181, 141, 0.9); */
-/*     cursor:pointer; */
-/* } */
-/* #contact:hover { */
-/*     /* background:rgba(255,50,50,0.9); */ */
-/*     background:rgba(110, 181, 141, 0.9); */
-/*     cursor:pointer; */
-/* } */
 #middle table {
     width:30%;
     margin:6vh auto;
@@ -460,48 +445,6 @@ body {
   background:rgb(110, 181, 141);
 }
 
-@media (max-width: 800px){ 
-    #sponsors {
-        display:none;
-    }
-    #about {
-        display:none;
-    }
-    #contact {
-        display:none;
-    }
-    #village {
-        display:none;
-    }
-    #footer {
-        text-align:center;
-    }
-    #middle {
-        width:90vw;
-        padding:0px 5vw;
-    }
-    #middle table {
-        width:80%;
-    }
-    .container form input {
-        width:90%;
-    }
-    .container form textarea {
-        width:90%;
-    }
-    #menu {
-        display:inline-block;
-    }
-    #onlywide {
-        display:none !important;
-    }
-    .box2 {
-        margin-left:0px !important;
-    }
-    #box div {
-        width:100%;
-    }
-}
 
 /* .us { */
 /*     display: flex; */
@@ -649,4 +592,131 @@ button.button span {
 
 #sponsors-title, #about-title, #contact-us {
   font-size: 45px;
+}
+
+.form {
+  position: absolute; 
+  top:250px; 
+  left: 200px; 
+  width: 30%"
+}
+
+.village {
+  position: absolute; 
+  top: 100px; 
+  left: 200px; 
+  width: 40%;
+}
+
+#f1 {
+  position: absolute; 
+  top:0; 
+  left: 10px;
+  opacity: 1;
+}
+
+#f2 {
+  position: absolute; 
+  bottom:-300px; 
+  right: 100px;
+  opacity: 1;
+}
+
+#f3 {
+  position: absolute; 
+  bottom:250px; 
+  right: -100px;
+  opacity: 1;
+}
+
+/* For mobile */
+@media (max-width: 800px){ 
+    #middle {
+        width:90vw;
+        padding:0px 5vw;
+    }
+    #middle h1 {
+        color:rgb(110, 181, 141);
+        font-size:80px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+    #contact-us {
+        margin-left: 20px;
+        color: #f9c921;
+        height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 30px;
+    }
+
+    #about-title {
+        margin-left: 20px;
+        color: #f9c921;
+        height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 30px;
+    }
+
+    #sponsors-title {
+        margin-left: 20px;
+        color: #f9c921;
+        height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 30px;
+    }
+
+    .form {
+      position: absolute; 
+      top:250px; 
+      left: 0px; 
+      width: 90%;
+    }
+
+    .village {
+      position: absolute; 
+      top: 0px; 
+      left: 20px; 
+      width: 90%;
+    }
+
+    #village-title-01, #village-title-02 {
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    #f1 {
+      opacity: 0;
+    }
+
+    #f2 {
+      opacity: 0.2;
+    }
+
+    #f3 {
+      opacity: 0.2;
+    }
+
+    #contact {
+      left: 25vw;
+    }
+
+    #sponsors:hover::after {
+        opacity: 0;
+    }
+
+    #contact:hover::after {
+        opacity: 0;
+    }
+
+    #village:hover::after {
+        opacity: 0;
+    }
+
+    #about:hover::after {
+        opacity: 0;
+    }
+
 }
